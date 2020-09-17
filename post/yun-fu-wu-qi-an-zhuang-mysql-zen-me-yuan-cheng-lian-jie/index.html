@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>云服务器安装mysql怎么远程连接 | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,12 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="我搞了这东西很久 ，所以我不希望你们像我一样踩坑.........................
+第一步：
+首先要确保你的云服务器开启了3306端口，这个是要去登入云服务器控制台开启的，设置安全组
+第二步：
+1.使用yum下载mysql以..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,12 +93,48 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">云服务器安装mysql怎么远程连接</h2>
+            <div class="post-date">2020-09-17</div>
             
-              <a class="tag" href="https://maodinghuan.github.io/tag/zhPUorkXU/">Gridea</a>
+            <div class="post-content" v-pre>
+              <p>我搞了这东西很久 ，所以我不希望你们像我一样踩坑.........................<br>
+第一步：<br>
+首先要确保你的云服务器开启了3306端口，这个是要去登入云服务器控制台开启的，设置安全组<br>
+第二步：<br>
+1.使用yum下载mysql以及需要的相关插件<br>
+yum -y install make gcc-c++ mysql mysql-devel mysql-server<br>
+2.启动MySQL<br>
+service mysqld start<br>
+3.登录mysql<br>
+mysql -uroot -p<br>
+4.远程登入授权<br>
+use mysql;<br>
+update user set host = '%' where user = 'root';<br>
+flush privileges;</p>
+<pre><code>如果不放心是否修改成功，那就执行
+select user,host from user;
+查看是否修改成功
+</code></pre>
+<p>ps:设置mysql登入密码：mysqladmin -u root -p password &quot;root&quot;</p>
+
+            </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://maodinghuan.github.io/post/chu-shi-wu-lian-wang/">
+                  <h3 class="post-title">
+                    初识物联网
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Gridea</title>
+<title>云服务器安装docker | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,13 @@
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="安装要求：
+1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；
+2.建议系统的Linux内核版本为3.10及以上；
+内核检查
+uname -r
+通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,12 +94,51 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">云服务器安装docker</h2>
+            <div class="post-date">2020-09-17</div>
             
-              <a class="tag" href="https://maodinghuan.github.io/tag/zhPUorkXU/">Gridea</a>
+            <div class="post-content" v-pre>
+              <p><strong>安装要求：</strong><br>
+1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；<br>
+2.建议系统的Linux内核版本为3.10及以上；<br>
+<strong>内核检查</strong><br>
+uname -r<br>
+通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的版本需要升级内核;<br>
+内核升级步骤请百度<br>
+<strong>Docker安装</strong><br>
+安装一些必要的系统工具：<br>
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2<br>
+添加软件源信息：<br>
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo<br>
+更新 yum 缓存：<br>
+sudo yum makecache fast<br>
+安装 Docker-ce：<br>
+sudo yum -y install docker-ce</p>
+<p>**注意：sudo yum -y install docker-ce  这一步可能会报错：<br>
+Error:<br>
+Problem: package docker-ce-3:19.03.6-3.el7.x86_64 requires containerd.io&gt;=1.2.2-3, but none of the providers can be installed</p>
+<ul>
+<li>cannot install the best candidate for the job**</li>
+</ul>
+<p>处理方法：<br>
+更新containerd.io版本<br>
+wget https://download.docker.com/linux/centos/7/x86_64/edge/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm<br>
+yum -y install containerd.io-1.2.6-3.3.el7.x86_64.rpm　//升级containerd.io软件包</p>
+<p>启动 Docker 后台服务:<br>
+sudo systemctl start docker<br>
+测试运行 hello-world<br>
+docker run hello-world</p>
+<p>OK!</p>
+
+            </div>
             
+            
+
+            
+
           </div>
+
         </div>
       </div>
     </div>

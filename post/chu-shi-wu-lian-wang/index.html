@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>初识物联网 | Gridea</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://maodinghuan.github.io/favicon.ico?v=1600332002572">
+<link rel="stylesheet" href="https://maodinghuan.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="1.什么是物联网？
+物联网（The Internet of Things，简称IOT）是指通过 各种信息传感器、射频识别技术、全球定位系统、红外感应器、激光扫描器等各种装置与技术，实时采集任何需要监控、 连接、互动的物体或过程，采集其声、光..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://maodinghuan.github.io">
+        <img src="https://maodinghuan.github.io/images/avatar.png?v=1600332002572" class="site-logo">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://maodinghuan.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">初识物联网</h2>
+            <div class="post-date">2020-09-17</div>
+            
+            <div class="post-content" v-pre>
+              <p>1.什么是物联网？<br>
+物联网（The Internet of Things，简称IOT）是指通过 各种信息传感器、射频识别技术、全球定位系统、红外感应器、激光扫描器等各种装置与技术，实时采集任何需要监控、 连接、互动的物体或过程，采集其声、光、热、电、力学、化 学、生物、位置等各种需要的信息，通过各类可能的网络接入，实现物与物、物与人的泛在连接，实现对物品和过程的智能化感知、识别和管理。物联网是一个基于互联网、传统电信网等的信息承载体，它让所有能够被独立寻址的普通物理对象形成互联互通的网络。</p>
+<p>2.物联网的由来？<br>
+嗯.......来自于一个咖啡壶时间，然后......2005年正式提出此概念，具体由来去万能的百度啦....</p>
+<p>3.物联网的基础架构？<br>
+三层：感知层、网络层、应用层</p>
+<p>4.物联网的应用场景？<br>
+4.1智慧城市<br>
+智慧城市发展理念、建设思路、实施路径、运行模式、技术手段的全方位迭代升级，进入以人为本、成效导向、统筹集约、协同创新的新型智慧城市发展阶段，进一步强化城市智能设施统筹布局和共性平台建设，破除数据孤岛，加强城乡统筹城市治理智能化随着人工智能技术进一步成熟，利用大数据技术对海量的城市基础设施状态数据和运行数据进行数据挖掘和分析，将加速渗透到智慧城市各领域，实现城市运行状态的智能感知和智能决策公共服务透明化以信息化、智能化方式实现网上办事与行政审批过程的全程跟踪、全程留痕、全程监督，探索模块化审批、容缺预审、限时审批相结合的全并联审批，形成新型智慧城市高效透明营商环境<br>
+基础设施集约化基于云设施实现统筹布局，形成核心平台的可重用、可扩展架构，为各类智慧应用系统提供一体化协同管理和服务能力，实现平台与应用松耦合<br>
+4.2智能家居<br>
+智能家居就是物联网在家庭中的基础应用，随着宽带业务的普及，智能家居产品涉及到方方面面。 家中无人，可利用手机等产品客户端远程操作智能空调，调节室温，甚者还可以学习用户的使用习惯，从而实现全自动的温控操作，使用户在炎炎夏季回家就能享受到冰爽带来的惬意;通过客户端实现智能灯泡的开关、调控灯泡的亮度和颜色等等; 插座内置Wifi，可实现遥控插座定时通断电流，甚者可以监测设备用电情况，生成用电图表让你对用电情况一目了然，安排资源使用及开支预算;智能体重秤，监测运动效果。内置可以监测血压、脂肪量的先进传感器，内定程序根据身体状态提出健康建议; 智能牙刷与客户端相连，供刷牙时间、刷牙位置提醒，可根据刷牙的数据生产图表，口腔的健康状况; 智能摄像头、窗户传感器、智能门铃、烟雾探测器、智能报警器等都是家庭不可少的安全监控设备，你及时出门在外，以在任意时间、地方查看家中任何一角的实时状况，任何安全隐患。看似繁琐的种种家居生活因为物联网变得更加轻松、美好 。<br>
+4.4智能交通<br>
+物联网技术在道路交通方面的应用比较成熟。随着社会车辆越来越普及，交通拥堵甚至瘫痪已成为城市的一大问题。对道路交通状况实时监控并将信息及时传递给驾驶人，让驾驶人及时作出出行调整，有效缓解了交通压力；高速路口设置道路自动收费系统(简称ETC)，免去进出口取卡、还卡的时间，提升车辆的通行效率;公交车上安装定位系统，能及时了解公交车行驶路线及到站时间，乘客可以根据搭乘路线确定出行，免去不必要的时间浪费。 社会车辆增多，除了会带来交通压力外，停车难也日益成为一个突出问题，不少城市推出了智慧路边停车管理系统，该系统基于云计算平台，结合物联网技术与移动支付技术，共享车位资源，提高车位利用率和用户的方便程度。该系统可以兼容手机模式和射频识别模式，通过手机端APP软件可以实现及时了解车位信息、车位位置，提前做好预定并实现交费等等操作，很大程度上解决了“停车难、难停车”的问题  。<br>
+4.5公共安全<br>
+近年来全球气候异常情况频发，灾害的突发性和危害性进一步加大，互联网可以实时监测环境的不安全性情况，提前预防、实时预警、及时采取应对措施，降低灾害对人类生命财产的威胁。 美国布法罗大学早在 2013 年就提出研究深海互联网项目，通过特殊处理的感应装置置于深海处，分析水下相关情况，海洋污染的防治、海底资源的探测、甚至对海啸也可以提供更加可靠的预警。该项目在当地湖水中进行试验，获得成功，为进一步扩大使用范围提供了基础。利用物联网技术可以智能感知大气、土壤、森林、水资源等方面各指标数据，对于改善人类生活环境发挥巨大作用。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-docker/">
+                  <h3 class="post-title">
+                    云服务器安装docker
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
