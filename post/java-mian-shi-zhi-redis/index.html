@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://maodinghuan.github.io/favicon.ico?v=1600332002572">
+<link rel="shortcut icon" href="https://maodinghuan.github.io/favicon.ico?v=1600388823495">
 <link rel="stylesheet" href="https://maodinghuan.github.io/styles/main.css">
 
 
@@ -30,7 +30,7 @@ Redis 可以存储键和五种不同类型的值之间的映射。键的类..." 
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://maodinghuan.github.io">
-        <img src="https://maodinghuan.github.io/images/avatar.png?v=1600332002572" class="site-logo">
+        <img src="https://maodinghuan.github.io/images/avatar.png?v=1600388823495" class="site-logo">
         <h1 class="site-title">Gridea</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -93,7 +93,7 @@ Redis 可以存储键和五种不同类型的值之间的映射。键的类..." 
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">java面试之redis</h2>
-            <div class="post-date">2020-09-17</div>
+            <div class="post-date">2020-09-01</div>
             
             <div class="post-content" v-pre>
               <p><strong>1.什么是redis？</strong><br>
@@ -115,9 +115,11 @@ Redis 较难支持在线扩容，在集群容量达到上限时在线扩容会�
 <strong>3.为什么要用 Redis /为什么要用缓存</strong><br>
 主要从“高性能”和“高并发”这两点来看待这个问题。<br>
 高性能：</p>
-<p>假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！</p>
-<p>高并发：</p>
+<p>假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！<br>
+<img src="https://maodinghuan.github.io/post-images/1600388810341.png" alt="" loading="lazy"><br>
+高并发：</p>
 <p>直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。<br>
+<img src="https://maodinghuan.github.io/post-images/1600388821036.png" alt="" loading="lazy"><br>
 <strong>4.redis为什么这么快？</strong><br>
 1、完全基于内存，绝大部分请求是纯粹的内存操作，非常快速。数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是O(1)；</p>
 <p>2、数据结构简单，对数据操作也简单，Redis 中的数据结构是专门进行设计的；</p>
@@ -130,15 +132,6 @@ Redis 较难支持在线扩容，在集群容量达到上限时在线扩容会�
 
             </div>
             
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://maodinghuan.github.io/post/spring-mian-shi/">
-                  <h3 class="post-title">
-                    Spring面试
-                  </h3>
-                </a>
-              </div>
             
 
             
