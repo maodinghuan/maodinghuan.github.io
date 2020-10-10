@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>SDK和API的区别 | Groot</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://maodinghuan.github.io/favicon.ico?v=1602310489450">
+<link rel="stylesheet" href="https://maodinghuan.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="先来讲个小故事
+研发人员A开发了软件A，研发人员B正在研发软件B。  有一天，研发人员B想要调用软件A的部分功能来用，但是他又不想从头看一遍软件A的源码和功能实现过程，怎么办呢？  研发人员A想了一个好主意：我把软件A里你需要的功能打包好，..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://maodinghuan.github.io">
+        <img src="https://maodinghuan.github.io/images/avatar.png?v=1602310489450" class="site-logo">
+        <h1 class="site-title">Groot</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://maodinghuan.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">SDK和API的区别</h2>
+            <div class="post-date">2020-10-10</div>
+            
+            <div class="post-content" v-pre>
+              <p><strong>先来讲个小故事</strong><br>
+研发人员A开发了软件A，研发人员B正在研发软件B。  有一天，研发人员B想要调用软件A的部分功能来用，但是他又不想从头看一遍软件A的源码和功能实现过程，怎么办呢？  研发人员A想了一个好主意：我把软件A里你需要的功能打包好，写成一个函数。你按照我说的流程，把这个函数放在软件B里，就能直接用我的功能了！其中，API就是研发人员A说的那个函数。<img src="https://maodinghuan.github.io/post-images/1602310191921.jpg" alt="" loading="lazy"><br>
+这就是API的诞生。</p>
+<p><strong>日常生活中，我们有很多类似API的场景</strong><br>
+比如：电脑需要调用手机里面的信息，这时候你会拿一根数据线将电脑手机连接起来，电脑和手机上连接数据线的接口就相当于“API接口”。如图所示：<br>
+<img src="https://maodinghuan.github.io/post-images/1602310252964.jpg" alt="" loading="lazy"></p>
+<p><strong>那SDK又是什么？</strong><br>
+SDK 就是 Software Development Kit 的缩写，翻译过来——软件开发工具包。这是一个覆盖面相当广泛的名词，可以这么说：辅助开发某一类软件的相关文档、范例和工具的集合都可以叫做SDK。SDK被开发出来是为了减少程序员工作量的。比如——有公司开发出某种软件的某一功能，把它封装成SDK（比如数据分析SDK就是能够实现数据分析功能的SDK），出售给其他公司做开发用，其他公司如果想要给软件开发出某种功能，但又不想从头开始搞开发，直接付钱省事。</p>
+<p><strong>现在可以谈谈API和SDK的区别了。</strong><br>
+总的来说，两者没有值得比较的区别，因为是具有关联性的两种东西。你可以把SDK想象成一个虚拟的程序包，在这个程序包中有一份做好的软件功能，这份程序包几乎是全封闭的，只有一个小小接口可以联通外界，这个接口就是API。比如——我们现在要在企业ERP系统中增加某个功能（比如自动备份、数据分析、云存储等），但又不想耗费大量时间、也没那么多研发亲自去做这个功能。这时我们可以选择使用这个“SDK”软件包，把ERP系统连接上API接口，就可以使用SDK软件包里的功能。</p>
+<p><strong>举个实例辅助理解：</strong><br>
+【中铁大桥科研院】有一个自研的信息平台，用于管理业务数据。但他们曾面临一个问题——尽管有信息平台，却因为系统的独立性，数据的上传和备份，需要依靠人工在excel里来回操作，效率很低。由于系统的开发周期长、成本高，桥科院将目光聚焦到现成的功能软件上。后来通过API将简道云直接插入公司数据库，数据可自动上传至信息平台上并统一展示；再通过webhook把数据推送到服务器，实现自动备份。<br>
+在这一过程中，简道云扮演的角色就是SDK，而简道云配备API接口，可以对接外部系统，让桥科院不用开发直接实现了数据自动上传、备份的功能。</p>
+<p><strong>最后，贴近生活讲讲两者的关系：</strong><br>
+有一杯密封饮料，它的名字叫做“SDK”。饮料上插着吸管，吸管的名字叫“API”。把你叫做“XX系统”。如果你想喝到SDK里的饮料（让系统拥有SDK中的功能），你必须通过API这根吸管来实现（通过API连接你的系统和SDK工具包），否则你就喝不到饮料。<br>
+所以：<br>
+SDK＝放着你想要的软件功能的软件包<br>
+API＝SDK上唯一的接口</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://maodinghuan.github.io/post/she-ying-ji-lu-mei-hao-sheng-huo/">
+                  <h3 class="post-title">
+                    摄影--记录美好生活！
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
