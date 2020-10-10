@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maodinghuan.github.io</id>
     <title>Groot</title>
-    <updated>2020-10-10T06:14:52.986Z</updated>
+    <updated>2020-10-10T06:19:17.728Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maodinghuan.github.io"/>
     <link rel="self" href="https://maodinghuan.github.io/atom.xml"/>
@@ -67,11 +67,76 @@ API＝SDK上唯一的接口</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[初识物联网]]></title>
+        <id>https://maodinghuan.github.io/post/chu-shi-wu-lian-wang/</id>
+        <link href="https://maodinghuan.github.io/post/chu-shi-wu-lian-wang/">
+        </link>
+        <updated>2020-09-17T08:37:34.000Z</updated>
+        <content type="html"><![CDATA[<p>1.什么是物联网？<br>
+物联网（The Internet of Things，简称IOT）是指通过 各种信息传感器、射频识别技术、全球定位系统、红外感应器、激光扫描器等各种装置与技术，实时采集任何需要监控、 连接、互动的物体或过程，采集其声、光、热、电、力学、化 学、生物、位置等各种需要的信息，通过各类可能的网络接入，实现物与物、物与人的泛在连接，实现对物品和过程的智能化感知、识别和管理。物联网是一个基于互联网、传统电信网等的信息承载体，它让所有能够被独立寻址的普通物理对象形成互联互通的网络。</p>
+<p>2.物联网的由来？<br>
+嗯.......来自于一个咖啡壶时间，然后......2005年正式提出此概念，具体由来去万能的百度啦....</p>
+<p>3.物联网的基础架构？<br>
+三层：感知层、网络层、应用层</p>
+<p>4.物联网的应用场景？<br>
+4.1智慧城市<br>
+智慧城市发展理念、建设思路、实施路径、运行模式、技术手段的全方位迭代升级，进入以人为本、成效导向、统筹集约、协同创新的新型智慧城市发展阶段，进一步强化城市智能设施统筹布局和共性平台建设，破除数据孤岛，加强城乡统筹城市治理智能化随着人工智能技术进一步成熟，利用大数据技术对海量的城市基础设施状态数据和运行数据进行数据挖掘和分析，将加速渗透到智慧城市各领域，实现城市运行状态的智能感知和智能决策公共服务透明化以信息化、智能化方式实现网上办事与行政审批过程的全程跟踪、全程留痕、全程监督，探索模块化审批、容缺预审、限时审批相结合的全并联审批，形成新型智慧城市高效透明营商环境<br>
+基础设施集约化基于云设施实现统筹布局，形成核心平台的可重用、可扩展架构，为各类智慧应用系统提供一体化协同管理和服务能力，实现平台与应用松耦合<br>
+4.2智能家居<br>
+智能家居就是物联网在家庭中的基础应用，随着宽带业务的普及，智能家居产品涉及到方方面面。 家中无人，可利用手机等产品客户端远程操作智能空调，调节室温，甚者还可以学习用户的使用习惯，从而实现全自动的温控操作，使用户在炎炎夏季回家就能享受到冰爽带来的惬意;通过客户端实现智能灯泡的开关、调控灯泡的亮度和颜色等等; 插座内置Wifi，可实现遥控插座定时通断电流，甚者可以监测设备用电情况，生成用电图表让你对用电情况一目了然，安排资源使用及开支预算;智能体重秤，监测运动效果。内置可以监测血压、脂肪量的先进传感器，内定程序根据身体状态提出健康建议; 智能牙刷与客户端相连，供刷牙时间、刷牙位置提醒，可根据刷牙的数据生产图表，口腔的健康状况; 智能摄像头、窗户传感器、智能门铃、烟雾探测器、智能报警器等都是家庭不可少的安全监控设备，你及时出门在外，以在任意时间、地方查看家中任何一角的实时状况，任何安全隐患。看似繁琐的种种家居生活因为物联网变得更加轻松、美好 。<br>
+4.4智能交通<br>
+物联网技术在道路交通方面的应用比较成熟。随着社会车辆越来越普及，交通拥堵甚至瘫痪已成为城市的一大问题。对道路交通状况实时监控并将信息及时传递给驾驶人，让驾驶人及时作出出行调整，有效缓解了交通压力；高速路口设置道路自动收费系统(简称ETC)，免去进出口取卡、还卡的时间，提升车辆的通行效率;公交车上安装定位系统，能及时了解公交车行驶路线及到站时间，乘客可以根据搭乘路线确定出行，免去不必要的时间浪费。 社会车辆增多，除了会带来交通压力外，停车难也日益成为一个突出问题，不少城市推出了智慧路边停车管理系统，该系统基于云计算平台，结合物联网技术与移动支付技术，共享车位资源，提高车位利用率和用户的方便程度。该系统可以兼容手机模式和射频识别模式，通过手机端APP软件可以实现及时了解车位信息、车位位置，提前做好预定并实现交费等等操作，很大程度上解决了“停车难、难停车”的问题  。<br>
+4.5公共安全<br>
+近年来全球气候异常情况频发，灾害的突发性和危害性进一步加大，互联网可以实时监测环境的不安全性情况，提前预防、实时预警、及时采取应对措施，降低灾害对人类生命财产的威胁。 美国布法罗大学早在 2013 年就提出研究深海互联网项目，通过特殊处理的感应装置置于深海处，分析水下相关情况，海洋污染的防治、海底资源的探测、甚至对海啸也可以提供更加可靠的预警。该项目在当地湖水中进行试验，获得成功，为进一步扩大使用范围提供了基础。利用物联网技术可以智能感知大气、土壤、森林、水资源等方面各指标数据，对于改善人类生活环境发挥巨大作用。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java面试之redis]]></title>
+        <id>https://maodinghuan.github.io/post/java-mian-shi-zhi-redis/</id>
+        <link href="https://maodinghuan.github.io/post/java-mian-shi-zhi-redis/">
+        </link>
+        <updated>2020-09-01T08:39:15.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>1.什么是redis？</strong><br>
+Redis(Remote Dictionary Server) 是一个使用 C 语言编写的，开源的（BSD许可）高性能非关系型（NoSQL）的键值对数据库。</p>
+<p>Redis 可以存储键和五种不同类型的值之间的映射。键的类型只能为字符串，值支持五种数据类型：字符串、列表、集合、散列表、有序集合。</p>
+<p>与传统数据库不同的是 Redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向，每秒可以处理超过 10万次读写操作，是已知性能最快的Key-Value DB。另外，Redis 也经常用来做分布式锁。除此之外，Redis 支持事务 、持久化、LUA脚本、LRU驱动事件、多种集群方案。<br>
+<strong>2.redis有哪些优缺点？</strong><br>
+优点<br>
+读写性能优异， Redis能读的速度是110000次/s，写的速度是81000次/s。<br>
+支持数据持久化，支持AOF和RDB两种持久化方式。<br>
+支持事务，Redis的所有操作都是原子性的，同时Redis还支持对几个操作合并后的原子性执行。<br>
+数据结构丰富，除了支持string类型的value外还支持hash、set、zset、list等数据结构。<br>
+支持主从复制，主机会自动将数据同步到从机，可以进行读写分离。<br>
+缺点<br>
+数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此Redis适合的场景主要局限在较小数据量的高性能操作和运算上。<br>
+Redis 不具备自动容错和恢复功能，主机从机的宕机都会导致前端部分读写请求失败，需要等待机器重启或者手动切换前端的IP才能恢复。<br>
+主机宕机，宕机前有部分数据未能及时同步到从机，切换IP后还会引入数据不一致的问题，降低了系统的可用性。<br>
+Redis 较难支持在线扩容，在集群容量达到上限时在线扩容会变得很复杂。为避免这一问题，运维人员在系统上线时必须确保有足够的空间，这对资源造成了很大的浪费。<br>
+<strong>3.为什么要用 Redis /为什么要用缓存</strong><br>
+主要从“高性能”和“高并发”这两点来看待这个问题。<br>
+高性能：</p>
+<p>假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！<br>
+<img src="https://maodinghuan.github.io/post-images/1600388810341.png" alt="" loading="lazy"><br>
+高并发：</p>
+<p>直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。<br>
+<img src="https://maodinghuan.github.io/post-images/1600388821036.png" alt="" loading="lazy"><br>
+<strong>4.redis为什么这么快？</strong><br>
+1、完全基于内存，绝大部分请求是纯粹的内存操作，非常快速。数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是O(1)；</p>
+<p>2、数据结构简单，对数据操作也简单，Redis 中的数据结构是专门进行设计的；</p>
+<p>3、采用单线程，避免了不必要的上下文切换和竞争条件，也不存在多进程或者多线程导致的切换而消耗 CPU，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有因为可能出现死锁而导致的性能消耗；</p>
+<p>4、使用多路 I/O 复用模型，非阻塞 IO；</p>
+<p>5、使用底层模型不同，它们之间底层实现方式以及与客户端之间通信的应用协议不一样，Redis 直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求；<br>
+<strong>5.什么是Redis持久化？</strong><br>
+持久化就是把内存的数据写到磁盘中去，防止服务宕机了内存数据丢失。</p>
+<p>持续更新中...................................</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[100 个网络基础知识普及，看完成半个网络高手]]></title>
         <id>https://maodinghuan.github.io/post/100-ge-wang-luo-ji-chu-zhi-shi-pu-ji-kan-wan-cheng-ban-ge-wang-luo-gao-shou/</id>
         <link href="https://maodinghuan.github.io/post/100-ge-wang-luo-ji-chu-zhi-shi-pu-ji-kan-wan-cheng-ban-ge-wang-luo-gao-shou/">
         </link>
-        <updated>2020-09-17T08:39:44.000Z</updated>
+        <updated>2020-08-11T08:39:44.000Z</updated>
         <content type="html"><![CDATA[<p>1）什么是链接？</p>
 <p>链接是指两个设备之间的连接。它包括用于一个设备能够与另一个设备通信的电缆类型和协议。</p>
 <p>2）OSI 参考模型的层次是什么？</p>
@@ -305,11 +370,153 @@ API＝SDK上唯一的接口</p>
 ]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[云服务器安装docker]]></title>
+        <id>https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-docker/</id>
+        <link href="https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-docker/">
+        </link>
+        <updated>2020-07-21T08:37:06.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>安装要求：</strong><br>
+1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；<br>
+2.建议系统的Linux内核版本为3.10及以上；<br>
+<strong>内核检查</strong><br>
+uname -r<br>
+通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的版本需要升级内核;<br>
+内核升级步骤请百度<br>
+<strong>Docker安装</strong><br>
+安装一些必要的系统工具：<br>
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2<br>
+添加软件源信息：<br>
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo<br>
+更新 yum 缓存：<br>
+sudo yum makecache fast<br>
+安装 Docker-ce：<br>
+sudo yum -y install docker-ce</p>
+<p>**注意：sudo yum -y install docker-ce  这一步可能会报错：<br>
+Error:<br>
+Problem: package docker-ce-3:19.03.6-3.el7.x86_64 requires containerd.io&gt;=1.2.2-3, but none of the providers can be installed</p>
+<ul>
+<li>cannot install the best candidate for the job**</li>
+</ul>
+<p>处理方法：<br>
+更新containerd.io版本<br>
+wget https://download.docker.com/linux/centos/7/x86_64/edge/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm<br>
+yum -y install containerd.io-1.2.6-3.3.el7.x86_64.rpm　//升级containerd.io软件包</p>
+<p>启动 Docker 后台服务:<br>
+sudo systemctl start docker<br>
+测试运行 hello-world<br>
+docker run hello-world</p>
+<p>OK!<br>
+PS：如果想装win10桌面版的docker，目前只支持win10 64位的专业版、企业版和教育版，家庭版装docker会有一大堆问题，不建议安装。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://maodinghuan.github.io/post/hello-gridea/</id>
+        <link href="https://maodinghuan.github.io/post/hello-gridea/">
+        </link>
+        <updated>2020-04-15T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
+hello 今天已经是我上班第N天了  哈哈....<br>
+实在是无聊  这才想起来  想写博客了<br>
+其实想写博客很久了....en<br>
+不说了 摸鱼久了  被老板发现  要带我去爬山了....<br>
+以后持续跟新....</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
+hello 今天已经是我上班第N天了  哈哈....<br>
+实在是无聊  这才想起来  想写博客了<br>
+其实想写博客很久了....en<br>
+不说了 摸鱼久了  被老板发现  要带我去爬山了....<br>
+以后持续跟新....</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[消息中间件MQ与RabbitMQ面试题]]></title>
+        <id>https://maodinghuan.github.io/post/xiao-xi-zhong-jian-jian-mq-yu-rabbitmq-mian-shi-ti/</id>
+        <link href="https://maodinghuan.github.io/post/xiao-xi-zhong-jian-jian-mq-yu-rabbitmq-mian-shi-ti/">
+        </link>
+        <updated>2020-04-14T08:38:20.000Z</updated>
+        <content type="html"><![CDATA[<p>1.为什么使用MQ？MQ的优点</p>
+<p>简答</p>
+<pre><code>异步处理 - 相比于传统的串行、并行方式，提高了系统吞吐量。
+应用解耦 - 系统间通过消息通信，不用关心其他系统的处理。
+流量削锋 - 可以通过消息队列长度控制请求量；可以缓解短时间内的高并发请求。
+日志处理 - 解决大量日志传输。
+消息通讯 - 消息队列一般都内置了高效的通信机制，因此也可以用在纯的消息通讯。比如实现点对点消息队列，或者聊天室等。
+</code></pre>
+<p>详答</p>
+<p>主要是：解耦、异步、削峰。</p>
+<p>解耦：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃…A 系统跟其它各种乱七八糟的系统严重耦合，A 系统产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。如果新系统需要数据，直接从 MQ 里消费即可；如果某个系统不需要这条数据了，就取消对 MQ 消息的消费即可。这样下来，A 系统压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超时等情况。</p>
+<p>就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦。</p>
+<p>异步：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>
+<p>削峰：减少高峰时期对服务器压力。<br>
+2.消息队列有什么优缺点？RabbitMQ有什么优缺点？</p>
+<p>优点上面已经说了，就是在特殊场景下有其对应的好处，解耦、异步、削峰。</p>
+<p>缺点有以下几个：</p>
+<p>系统可用性降低</p>
+<p>本来系统运行好好的，现在你非要加入个消息队列进去，那消息队列挂了，你的系统不是呵呵了。因此，系统可用性会降低；</p>
+<p>系统复杂度提高</p>
+<p>加入了消息队列，要多考虑很多方面的问题，比如：一致性问题、如何保证消息不被重复消费、如何保证消息可靠性传输等。因此，需要考虑的东西更多，复杂性增大。</p>
+<p>一致性问题</p>
+<p>A 系统处理完了直接返回成功了，人都以为你这个请求就成功了；但是问题是，要是 BCD 三个系统那里，BD 两个系统写库成功了，结果 C 系统写库失败了，咋整？你这数据就不一致了。</p>
+<p>所以消息队列实际是一种非常复杂的架构，你引入它有很多好处，但是也得针对它带来的坏处做各种额外的技术方案和架构来规避掉，做好之后，你会发现，妈呀，系统复杂度提升了一个数量级，也许是复杂了 10 倍。但是关键时刻，用，还是得用的。<br>
+你们公司生产环境用的是什么消息中间件？</p>
+<p>这个首先你可以说下你们公司选用的是什么消息中间件，比如用的是RabbitMQ，然后可以初步给一些你对不同MQ中间件技术的选型分析。</p>
+<p>举个例子：比如说ActiveMQ是老牌的消息中间件，国内很多公司过去运用的还是非常广泛的，功能很强大。</p>
+<p>但是问题在于没法确认ActiveMQ可以支撑互联网公司的高并发、高负载以及高吞吐的复杂场景，在国内互联网公司落地较少。而且使用较多的是一些传统企业，用ActiveMQ做异步调用和系统解耦。</p>
+<p>然后你可以说说RabbitMQ，他的好处在于可以支撑高并发、高吞吐、性能很高，同时有非常完善便捷的后台管理界面可以使用。</p>
+<p>另外，他还支持集群化、高可用部署架构、消息高可靠支持，功能较为完善。</p>
+<p>而且经过调研，国内各大互联网公司落地大规模RabbitMQ集群支撑自身业务的case较多，国内各种中小型互联网公司使用RabbitMQ的实践也比较多。</p>
+<p>除此之外，RabbitMQ的开源社区很活跃，较高频率的迭代版本，来修复发现的bug以及进行各种优化，因此综合考虑过后，公司采取了RabbitMQ。</p>
+<p>但是RabbitMQ也有一点缺陷，就是他自身是基于erlang语言开发的，所以导致较为难以分析里面的源码，也较难进行深层次的源码定制和改造，毕竟需要较为扎实的erlang语言功底才可以。</p>
+<p>然后可以聊聊RocketMQ，是阿里开源的，经过阿里的生产环境的超高并发、高吞吐的考验，性能卓越，同时还支持分布式事务等特殊场景。</p>
+<p>而且RocketMQ是基于Java语言开发的，适合深入阅读源码，有需要可以站在源码层面解决线上生产问题，包括源码的二次开发和改造。</p>
+<p>另外就是Kafka。Kafka提供的消息中间件的功能明显较少一些，相对上述几款MQ中间件要少很多。</p>
+<p>但是Kafka的优势在于专为超高吞吐量的实时日志采集、实时数据同步、实时数据计算等场景来设计。</p>
+<p>因此Kafka在大数据领域中配合实时计算技术（比如Spark Streaming、Storm、Flink）使用的较多。但是在传统的MQ中间件使用场景中较少采用。</p>
+<p>3.RabbitMQ基本概念</p>
+<pre><code>Broker： 简单来说就是消息队列服务器实体
+Exchange： 消息交换机，它指定消息按什么规则，路由到哪个队列
+Queue： 消息队列载体，每个消息都会被投入到一个或多个队列
+Binding： 绑定，它的作用就是把exchange和queue按照路由规则绑定起来
+Routing Key： 路由关键字，exchange根据这个关键字进行消息投递
+VHost： vhost 可以理解为虚拟 broker ，即 mini-RabbitMQ server。其内部均含有独立的 queue、exchange 和 binding 等，但最最重要的是，其拥有独立的权限系统，可以做到 vhost 范围的用户控制。当然，从 RabbitMQ 的全局角度，vhost 可以作为不同权限隔离的手段（一个典型的例子就是不同的应用可以跑在不同的 vhost 中）。
+Producer： 消息生产者，就是投递消息的程序
+Consumer： 消息消费者，就是接受消息的程序
+Channel： 消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务
+</code></pre>
+<p>由Exchange、Queue、RoutingKey三个才能决定一个从Exchange到Queue的唯一的线路。<br>
+4.如何保证RabbitMQ消息的顺序性？</p>
+<p>拆分多个 queue，每个 queue 一个 consumer，就是多一些 queue 而已，确实是麻烦点；或者就一个 queue 但是对应一个 consumer，然后这个 consumer 内部用内存队列做排队，然后分发给底层不同的 worker 来处理。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Spring面试]]></title>
         <id>https://maodinghuan.github.io/post/spring-mian-shi/</id>
         <link href="https://maodinghuan.github.io/post/spring-mian-shi/">
         </link>
-        <updated>2020-09-17T08:38:44.000Z</updated>
+        <updated>2020-04-12T08:38:44.000Z</updated>
         <content type="html"><![CDATA[<p>1.什么是spring?</p>
 <p>Spring是一个轻量级Java开发框架，最早有Rod Johnson创建，目的是为了解决企业级应用开发的业务逻辑层和其他各层的耦合问题。它是一个分层的JavaSE/JavaEE full-stack（一站式）轻量级开源框架，为开发Java应用程序提供全面的基础架构支持。Spring负责基础架构，因此Java开发者可以专注于应用程序的开发。</p>
 <p>Spring最根本的使命是解决企业级应用开发的复杂性，即简化Java开发。</p>
@@ -381,71 +588,11 @@ Spring依赖反射，反射影响性能
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[消息中间件MQ与RabbitMQ面试题]]></title>
-        <id>https://maodinghuan.github.io/post/xiao-xi-zhong-jian-jian-mq-yu-rabbitmq-mian-shi-ti/</id>
-        <link href="https://maodinghuan.github.io/post/xiao-xi-zhong-jian-jian-mq-yu-rabbitmq-mian-shi-ti/">
-        </link>
-        <updated>2020-09-17T08:38:20.000Z</updated>
-        <content type="html"><![CDATA[<p>1.为什么使用MQ？MQ的优点</p>
-<p>简答</p>
-<pre><code>异步处理 - 相比于传统的串行、并行方式，提高了系统吞吐量。
-应用解耦 - 系统间通过消息通信，不用关心其他系统的处理。
-流量削锋 - 可以通过消息队列长度控制请求量；可以缓解短时间内的高并发请求。
-日志处理 - 解决大量日志传输。
-消息通讯 - 消息队列一般都内置了高效的通信机制，因此也可以用在纯的消息通讯。比如实现点对点消息队列，或者聊天室等。
-</code></pre>
-<p>详答</p>
-<p>主要是：解耦、异步、削峰。</p>
-<p>解耦：A 系统发送数据到 BCD 三个系统，通过接口调用发送。如果 E 系统也要这个数据呢？那如果 C 系统现在不需要了呢？A 系统负责人几乎崩溃…A 系统跟其它各种乱七八糟的系统严重耦合，A 系统产生一条比较关键的数据，很多系统都需要 A 系统将这个数据发送过来。如果使用 MQ，A 系统产生一条数据，发送到 MQ 里面去，哪个系统需要数据自己去 MQ 里面消费。如果新系统需要数据，直接从 MQ 里消费即可；如果某个系统不需要这条数据了，就取消对 MQ 消息的消费即可。这样下来，A 系统压根儿不需要去考虑要给谁发送数据，不需要维护这个代码，也不需要考虑人家是否调用成功、失败超时等情况。</p>
-<p>就是一个系统或者一个模块，调用了多个系统或者模块，互相之间的调用很复杂，维护起来很麻烦。但是其实这个调用是不需要直接同步调用接口的，如果用 MQ 给它异步化解耦。</p>
-<p>异步：A 系统接收一个请求，需要在自己本地写库，还需要在 BCD 三个系统写库，自己本地写库要 3ms，BCD 三个系统分别写库要 300ms、450ms、200ms。最终请求总延时是 3 + 300 + 450 + 200 = 953ms，接近 1s，用户感觉搞个什么东西，慢死了慢死了。用户通过浏览器发起请求。如果使用 MQ，那么 A 系统连续发送 3 条消息到 MQ 队列中，假如耗时 5ms，A 系统从接受一个请求到返回响应给用户，总时长是 3 + 5 = 8ms。</p>
-<p>削峰：减少高峰时期对服务器压力。<br>
-2.消息队列有什么优缺点？RabbitMQ有什么优缺点？</p>
-<p>优点上面已经说了，就是在特殊场景下有其对应的好处，解耦、异步、削峰。</p>
-<p>缺点有以下几个：</p>
-<p>系统可用性降低</p>
-<p>本来系统运行好好的，现在你非要加入个消息队列进去，那消息队列挂了，你的系统不是呵呵了。因此，系统可用性会降低；</p>
-<p>系统复杂度提高</p>
-<p>加入了消息队列，要多考虑很多方面的问题，比如：一致性问题、如何保证消息不被重复消费、如何保证消息可靠性传输等。因此，需要考虑的东西更多，复杂性增大。</p>
-<p>一致性问题</p>
-<p>A 系统处理完了直接返回成功了，人都以为你这个请求就成功了；但是问题是，要是 BCD 三个系统那里，BD 两个系统写库成功了，结果 C 系统写库失败了，咋整？你这数据就不一致了。</p>
-<p>所以消息队列实际是一种非常复杂的架构，你引入它有很多好处，但是也得针对它带来的坏处做各种额外的技术方案和架构来规避掉，做好之后，你会发现，妈呀，系统复杂度提升了一个数量级，也许是复杂了 10 倍。但是关键时刻，用，还是得用的。<br>
-你们公司生产环境用的是什么消息中间件？</p>
-<p>这个首先你可以说下你们公司选用的是什么消息中间件，比如用的是RabbitMQ，然后可以初步给一些你对不同MQ中间件技术的选型分析。</p>
-<p>举个例子：比如说ActiveMQ是老牌的消息中间件，国内很多公司过去运用的还是非常广泛的，功能很强大。</p>
-<p>但是问题在于没法确认ActiveMQ可以支撑互联网公司的高并发、高负载以及高吞吐的复杂场景，在国内互联网公司落地较少。而且使用较多的是一些传统企业，用ActiveMQ做异步调用和系统解耦。</p>
-<p>然后你可以说说RabbitMQ，他的好处在于可以支撑高并发、高吞吐、性能很高，同时有非常完善便捷的后台管理界面可以使用。</p>
-<p>另外，他还支持集群化、高可用部署架构、消息高可靠支持，功能较为完善。</p>
-<p>而且经过调研，国内各大互联网公司落地大规模RabbitMQ集群支撑自身业务的case较多，国内各种中小型互联网公司使用RabbitMQ的实践也比较多。</p>
-<p>除此之外，RabbitMQ的开源社区很活跃，较高频率的迭代版本，来修复发现的bug以及进行各种优化，因此综合考虑过后，公司采取了RabbitMQ。</p>
-<p>但是RabbitMQ也有一点缺陷，就是他自身是基于erlang语言开发的，所以导致较为难以分析里面的源码，也较难进行深层次的源码定制和改造，毕竟需要较为扎实的erlang语言功底才可以。</p>
-<p>然后可以聊聊RocketMQ，是阿里开源的，经过阿里的生产环境的超高并发、高吞吐的考验，性能卓越，同时还支持分布式事务等特殊场景。</p>
-<p>而且RocketMQ是基于Java语言开发的，适合深入阅读源码，有需要可以站在源码层面解决线上生产问题，包括源码的二次开发和改造。</p>
-<p>另外就是Kafka。Kafka提供的消息中间件的功能明显较少一些，相对上述几款MQ中间件要少很多。</p>
-<p>但是Kafka的优势在于专为超高吞吐量的实时日志采集、实时数据同步、实时数据计算等场景来设计。</p>
-<p>因此Kafka在大数据领域中配合实时计算技术（比如Spark Streaming、Storm、Flink）使用的较多。但是在传统的MQ中间件使用场景中较少采用。</p>
-<p>3.RabbitMQ基本概念</p>
-<pre><code>Broker： 简单来说就是消息队列服务器实体
-Exchange： 消息交换机，它指定消息按什么规则，路由到哪个队列
-Queue： 消息队列载体，每个消息都会被投入到一个或多个队列
-Binding： 绑定，它的作用就是把exchange和queue按照路由规则绑定起来
-Routing Key： 路由关键字，exchange根据这个关键字进行消息投递
-VHost： vhost 可以理解为虚拟 broker ，即 mini-RabbitMQ server。其内部均含有独立的 queue、exchange 和 binding 等，但最最重要的是，其拥有独立的权限系统，可以做到 vhost 范围的用户控制。当然，从 RabbitMQ 的全局角度，vhost 可以作为不同权限隔离的手段（一个典型的例子就是不同的应用可以跑在不同的 vhost 中）。
-Producer： 消息生产者，就是投递消息的程序
-Consumer： 消息消费者，就是接受消息的程序
-Channel： 消息通道，在客户端的每个连接里，可建立多个channel，每个channel代表一个会话任务
-</code></pre>
-<p>由Exchange、Queue、RoutingKey三个才能决定一个从Exchange到Queue的唯一的线路。<br>
-4.如何保证RabbitMQ消息的顺序性？</p>
-<p>拆分多个 queue，每个 queue 一个 consumer，就是多一些 queue 而已，确实是麻烦点；或者就一个 queue 但是对应一个 consumer，然后这个 consumer 内部用内存队列做排队，然后分发给底层不同的 worker 来处理。</p>
-]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[云服务器安装mysql怎么远程连接]]></title>
         <id>https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-mysql-zen-me-yuan-cheng-lian-jie/</id>
         <link href="https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-mysql-zen-me-yuan-cheng-lian-jie/">
         </link>
-        <updated>2020-09-17T08:37:54.000Z</updated>
+        <updated>2020-04-08T08:37:54.000Z</updated>
         <content type="html"><![CDATA[<p>我搞了这东西很久 ，所以我不希望你们像我一样踩坑.........................<br>
 第一步：<br>
 首先要确保你的云服务器开启了3306端口，这个是要去登入云服务器控制台开启的，设置安全组<br>
@@ -466,153 +613,6 @@ select user,host from user;
 </code></pre>
 <figure data-type="image" tabindex="1"><img src="https://maodinghuan.github.io/post-images/1600389264374.png" alt="" loading="lazy"></figure>
 <p>ps:设置mysql登入密码：mysqladmin -u root -p password &quot;root&quot;</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[初识物联网]]></title>
-        <id>https://maodinghuan.github.io/post/chu-shi-wu-lian-wang/</id>
-        <link href="https://maodinghuan.github.io/post/chu-shi-wu-lian-wang/">
-        </link>
-        <updated>2020-09-17T08:37:34.000Z</updated>
-        <content type="html"><![CDATA[<p>1.什么是物联网？<br>
-物联网（The Internet of Things，简称IOT）是指通过 各种信息传感器、射频识别技术、全球定位系统、红外感应器、激光扫描器等各种装置与技术，实时采集任何需要监控、 连接、互动的物体或过程，采集其声、光、热、电、力学、化 学、生物、位置等各种需要的信息，通过各类可能的网络接入，实现物与物、物与人的泛在连接，实现对物品和过程的智能化感知、识别和管理。物联网是一个基于互联网、传统电信网等的信息承载体，它让所有能够被独立寻址的普通物理对象形成互联互通的网络。</p>
-<p>2.物联网的由来？<br>
-嗯.......来自于一个咖啡壶时间，然后......2005年正式提出此概念，具体由来去万能的百度啦....</p>
-<p>3.物联网的基础架构？<br>
-三层：感知层、网络层、应用层</p>
-<p>4.物联网的应用场景？<br>
-4.1智慧城市<br>
-智慧城市发展理念、建设思路、实施路径、运行模式、技术手段的全方位迭代升级，进入以人为本、成效导向、统筹集约、协同创新的新型智慧城市发展阶段，进一步强化城市智能设施统筹布局和共性平台建设，破除数据孤岛，加强城乡统筹城市治理智能化随着人工智能技术进一步成熟，利用大数据技术对海量的城市基础设施状态数据和运行数据进行数据挖掘和分析，将加速渗透到智慧城市各领域，实现城市运行状态的智能感知和智能决策公共服务透明化以信息化、智能化方式实现网上办事与行政审批过程的全程跟踪、全程留痕、全程监督，探索模块化审批、容缺预审、限时审批相结合的全并联审批，形成新型智慧城市高效透明营商环境<br>
-基础设施集约化基于云设施实现统筹布局，形成核心平台的可重用、可扩展架构，为各类智慧应用系统提供一体化协同管理和服务能力，实现平台与应用松耦合<br>
-4.2智能家居<br>
-智能家居就是物联网在家庭中的基础应用，随着宽带业务的普及，智能家居产品涉及到方方面面。 家中无人，可利用手机等产品客户端远程操作智能空调，调节室温，甚者还可以学习用户的使用习惯，从而实现全自动的温控操作，使用户在炎炎夏季回家就能享受到冰爽带来的惬意;通过客户端实现智能灯泡的开关、调控灯泡的亮度和颜色等等; 插座内置Wifi，可实现遥控插座定时通断电流，甚者可以监测设备用电情况，生成用电图表让你对用电情况一目了然，安排资源使用及开支预算;智能体重秤，监测运动效果。内置可以监测血压、脂肪量的先进传感器，内定程序根据身体状态提出健康建议; 智能牙刷与客户端相连，供刷牙时间、刷牙位置提醒，可根据刷牙的数据生产图表，口腔的健康状况; 智能摄像头、窗户传感器、智能门铃、烟雾探测器、智能报警器等都是家庭不可少的安全监控设备，你及时出门在外，以在任意时间、地方查看家中任何一角的实时状况，任何安全隐患。看似繁琐的种种家居生活因为物联网变得更加轻松、美好 。<br>
-4.4智能交通<br>
-物联网技术在道路交通方面的应用比较成熟。随着社会车辆越来越普及，交通拥堵甚至瘫痪已成为城市的一大问题。对道路交通状况实时监控并将信息及时传递给驾驶人，让驾驶人及时作出出行调整，有效缓解了交通压力；高速路口设置道路自动收费系统(简称ETC)，免去进出口取卡、还卡的时间，提升车辆的通行效率;公交车上安装定位系统，能及时了解公交车行驶路线及到站时间，乘客可以根据搭乘路线确定出行，免去不必要的时间浪费。 社会车辆增多，除了会带来交通压力外，停车难也日益成为一个突出问题，不少城市推出了智慧路边停车管理系统，该系统基于云计算平台，结合物联网技术与移动支付技术，共享车位资源，提高车位利用率和用户的方便程度。该系统可以兼容手机模式和射频识别模式，通过手机端APP软件可以实现及时了解车位信息、车位位置，提前做好预定并实现交费等等操作，很大程度上解决了“停车难、难停车”的问题  。<br>
-4.5公共安全<br>
-近年来全球气候异常情况频发，灾害的突发性和危害性进一步加大，互联网可以实时监测环境的不安全性情况，提前预防、实时预警、及时采取应对措施，降低灾害对人类生命财产的威胁。 美国布法罗大学早在 2013 年就提出研究深海互联网项目，通过特殊处理的感应装置置于深海处，分析水下相关情况，海洋污染的防治、海底资源的探测、甚至对海啸也可以提供更加可靠的预警。该项目在当地湖水中进行试验，获得成功，为进一步扩大使用范围提供了基础。利用物联网技术可以智能感知大气、土壤、森林、水资源等方面各指标数据，对于改善人类生活环境发挥巨大作用。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[云服务器安装docker]]></title>
-        <id>https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-docker/</id>
-        <link href="https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-docker/">
-        </link>
-        <updated>2020-09-17T08:37:06.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>安装要求：</strong><br>
-1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；<br>
-2.建议系统的Linux内核版本为3.10及以上；<br>
-<strong>内核检查</strong><br>
-uname -r<br>
-通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的版本需要升级内核;<br>
-内核升级步骤请百度<br>
-<strong>Docker安装</strong><br>
-安装一些必要的系统工具：<br>
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2<br>
-添加软件源信息：<br>
-sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo<br>
-更新 yum 缓存：<br>
-sudo yum makecache fast<br>
-安装 Docker-ce：<br>
-sudo yum -y install docker-ce</p>
-<p>**注意：sudo yum -y install docker-ce  这一步可能会报错：<br>
-Error:<br>
-Problem: package docker-ce-3:19.03.6-3.el7.x86_64 requires containerd.io&gt;=1.2.2-3, but none of the providers can be installed</p>
-<ul>
-<li>cannot install the best candidate for the job**</li>
-</ul>
-<p>处理方法：<br>
-更新containerd.io版本<br>
-wget https://download.docker.com/linux/centos/7/x86_64/edge/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm<br>
-yum -y install containerd.io-1.2.6-3.3.el7.x86_64.rpm　//升级containerd.io软件包</p>
-<p>启动 Docker 后台服务:<br>
-sudo systemctl start docker<br>
-测试运行 hello-world<br>
-docker run hello-world</p>
-<p>OK!<br>
-PS：如果想装win10桌面版的docker，目前只支持win10 64位的专业版、企业版和教育版，家庭版装docker会有一大堆问题，不建议安装。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[java面试之redis]]></title>
-        <id>https://maodinghuan.github.io/post/java-mian-shi-zhi-redis/</id>
-        <link href="https://maodinghuan.github.io/post/java-mian-shi-zhi-redis/">
-        </link>
-        <updated>2020-09-01T08:39:15.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>1.什么是redis？</strong><br>
-Redis(Remote Dictionary Server) 是一个使用 C 语言编写的，开源的（BSD许可）高性能非关系型（NoSQL）的键值对数据库。</p>
-<p>Redis 可以存储键和五种不同类型的值之间的映射。键的类型只能为字符串，值支持五种数据类型：字符串、列表、集合、散列表、有序集合。</p>
-<p>与传统数据库不同的是 Redis 的数据是存在内存中的，所以读写速度非常快，因此 redis 被广泛应用于缓存方向，每秒可以处理超过 10万次读写操作，是已知性能最快的Key-Value DB。另外，Redis 也经常用来做分布式锁。除此之外，Redis 支持事务 、持久化、LUA脚本、LRU驱动事件、多种集群方案。<br>
-<strong>2.redis有哪些优缺点？</strong><br>
-优点<br>
-读写性能优异， Redis能读的速度是110000次/s，写的速度是81000次/s。<br>
-支持数据持久化，支持AOF和RDB两种持久化方式。<br>
-支持事务，Redis的所有操作都是原子性的，同时Redis还支持对几个操作合并后的原子性执行。<br>
-数据结构丰富，除了支持string类型的value外还支持hash、set、zset、list等数据结构。<br>
-支持主从复制，主机会自动将数据同步到从机，可以进行读写分离。<br>
-缺点<br>
-数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此Redis适合的场景主要局限在较小数据量的高性能操作和运算上。<br>
-Redis 不具备自动容错和恢复功能，主机从机的宕机都会导致前端部分读写请求失败，需要等待机器重启或者手动切换前端的IP才能恢复。<br>
-主机宕机，宕机前有部分数据未能及时同步到从机，切换IP后还会引入数据不一致的问题，降低了系统的可用性。<br>
-Redis 较难支持在线扩容，在集群容量达到上限时在线扩容会变得很复杂。为避免这一问题，运维人员在系统上线时必须确保有足够的空间，这对资源造成了很大的浪费。<br>
-<strong>3.为什么要用 Redis /为什么要用缓存</strong><br>
-主要从“高性能”和“高并发”这两点来看待这个问题。<br>
-高性能：</p>
-<p>假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！<br>
-<img src="https://maodinghuan.github.io/post-images/1600388810341.png" alt="" loading="lazy"><br>
-高并发：</p>
-<p>直接操作缓存能够承受的请求是远远大于直接访问数据库的，所以我们可以考虑把数据库中的部分数据转移到缓存中去，这样用户的一部分请求会直接到缓存这里而不用经过数据库。<br>
-<img src="https://maodinghuan.github.io/post-images/1600388821036.png" alt="" loading="lazy"><br>
-<strong>4.redis为什么这么快？</strong><br>
-1、完全基于内存，绝大部分请求是纯粹的内存操作，非常快速。数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是O(1)；</p>
-<p>2、数据结构简单，对数据操作也简单，Redis 中的数据结构是专门进行设计的；</p>
-<p>3、采用单线程，避免了不必要的上下文切换和竞争条件，也不存在多进程或者多线程导致的切换而消耗 CPU，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有因为可能出现死锁而导致的性能消耗；</p>
-<p>4、使用多路 I/O 复用模型，非阻塞 IO；</p>
-<p>5、使用底层模型不同，它们之间底层实现方式以及与客户端之间通信的应用协议不一样，Redis 直接自己构建了 VM 机制 ，因为一般的系统调用系统函数的话，会浪费一定的时间去移动和请求；<br>
-<strong>5.什么是Redis持久化？</strong><br>
-持久化就是把内存的数据写到磁盘中去，防止服务宕机了内存数据丢失。</p>
-<p>持续更新中...................................</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://maodinghuan.github.io/post/hello-gridea/</id>
-        <link href="https://maodinghuan.github.io/post/hello-gridea/">
-        </link>
-        <updated>2020-04-15T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-hello 今天已经是我上班第N天了  哈哈....<br>
-实在是无聊  这才想起来  想写博客了<br>
-其实想写博客很久了....en<br>
-不说了 摸鱼久了  被老板发现  要带我去爬山了....<br>
-以后持续跟新....</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...<br>
-hello 今天已经是我上班第N天了  哈哈....<br>
-实在是无聊  这才想起来  想写博客了<br>
-其实想写博客很久了....en<br>
-不说了 摸鱼久了  被老板发现  要带我去爬山了....<br>
-以后持续跟新....</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
