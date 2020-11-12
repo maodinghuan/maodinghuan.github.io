@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>云服务器安装docker | Groot</title>
+<title>SpringBoot解决跨域问题 | Groot</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,12 +18,10 @@
 
 
 
-    <meta name="description" content="安装要求：
-1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；
-2.建议系统的Linux内核版本为3.10及以上；
-内核检查
-uname -r
-通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的..." />
+    <meta name="description" content="方案一：创建一个filter解决跨域
+@Component
+public class SimpleCORSFilter implements Filter {
+public void doFilter(ServletRequest req,..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -95,51 +93,77 @@ uname -r
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">云服务器安装docker</h2>
-            <div class="post-date">2020-07-21</div>
+            <h2 class="post-title">SpringBoot解决跨域问题</h2>
+            <div class="post-date">2020-11-11</div>
             
             <div class="post-content" v-pre>
-              <p><strong>安装要求：</strong><br>
-1.Docker只支持64位CPU架构的计算机，目前不支持32位CPU；<br>
-2.建议系统的Linux内核版本为3.10及以上；<br>
-<strong>内核检查</strong><br>
-uname -r<br>
-通过uname -r来检查自己的内核是否是3.x及以上，如果是3.x以下的版本需要升级内核;<br>
-内核升级步骤请百度<br>
-<strong>Docker安装</strong><br>
-安装一些必要的系统工具：<br>
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2<br>
-添加软件源信息：<br>
-sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo<br>
-更新 yum 缓存：<br>
-sudo yum makecache fast<br>
-安装 Docker-ce：<br>
-sudo yum -y install docker-ce</p>
-<p>**注意：sudo yum -y install docker-ce  这一步可能会报错：<br>
-Error:<br>
-Problem: package docker-ce-3:19.03.6-3.el7.x86_64 requires containerd.io&gt;=1.2.2-3, but none of the providers can be installed</p>
-<ul>
-<li>cannot install the best candidate for the job**</li>
-</ul>
-<p>处理方法：<br>
-更新containerd.io版本<br>
-wget https://download.docker.com/linux/centos/7/x86_64/edge/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm<br>
-yum -y install containerd.io-1.2.6-3.3.el7.x86_64.rpm　//升级containerd.io软件包</p>
-<p>启动 Docker 后台服务:<br>
-sudo systemctl start docker<br>
-测试运行 hello-world<br>
-docker run hello-world</p>
-<p>OK!<br>
-PS：如果想装win10桌面版的docker，目前只支持win10 64位的专业版、企业版和教育版，家庭版装docker会有一大堆问题，不建议安装。</p>
+              <p><strong>方案一：创建一个filter解决跨域</strong><br>
+@Component</p>
+<p>public class SimpleCORSFilter implements Filter {</p>
+<pre><code>public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+
+    HttpServletResponse response = (HttpServletResponse) res;
+
+    response.setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+
+    response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;POST, GET, OPTIONS, DELETE, HEAD&quot;);
+
+    response.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;3600&quot;);
+
+    response.setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;access-control-allow-origin, authority, content-type, version-info, X-Requested-With&quot;);
+
+
+
+    chain.doFilter(req, res);
+
+}
+
+public void init(FilterConfig filterConfig) {}
+
+public void destroy() {}
+</code></pre>
+<p>}</p>
+<p><strong>方案二：基于WebMvcConfigurerAdapter配置加入Cors的跨域</strong><br>
+import org.springframework.context.annotation.Configuration;</p>
+<p>import org.springframework.web.servlet.config.annotation.CorsRegistry;</p>
+<p>import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;</p>
+<p>@Configuration</p>
+<p>public class CorsConfig extends WebMvcConfigurerAdapter {</p>
+<pre><code>@Override 
+
+public void addCorsMappings(CorsRegistry registry) { 
+
+    registry.addMapping(&quot;/**&quot;) 
+
+            .allowedOrigins(&quot;*&quot;) 
+
+            .allowCredentials(true) 
+
+            .allowedMethods(&quot;GET&quot;, &quot;POST&quot;, &quot;DELETE&quot;, &quot;PUT&quot;) 
+
+            .maxAge(3600); 
+
+} 
+</code></pre>
+<p>}</p>
+<p>如果你想做到更细致也可以使用@CrossOrigin这个注解在controller类中使用。</p>
+<p>这样就可以指定该controller中所有方法都能处理来自http:19.168.1.10:8080中的请求。<br>
+@CrossOrigin(origins = &quot;http://192.168.1.10:8080&quot;, maxAge = 3600)</p>
+<p>@RequestMapping(&quot;rest_index&quot;)</p>
+<p>@RestController</p>
+<p>public class IndexController{</p>
+<p>}</p>
+<p>第一种Filter的方案也支持springmvc。</p>
+<p>第二种常用于springboot。</p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://maodinghuan.github.io/post/hello-gridea/">
+                <a href="https://maodinghuan.github.io/post/sdk-he-api-de-qu-bie/">
                   <h3 class="post-title">
-                    Hello Gridea
+                    SDK和API的区别
                   </h3>
                 </a>
               </div>

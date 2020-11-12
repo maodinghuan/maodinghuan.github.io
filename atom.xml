@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maodinghuan.github.io</id>
     <title>Groot</title>
-    <updated>2020-10-10T06:22:05.291Z</updated>
+    <updated>2020-11-12T02:03:11.257Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maodinghuan.github.io"/>
     <link rel="self" href="https://maodinghuan.github.io/atom.xml"/>
@@ -10,6 +10,72 @@
     <logo>https://maodinghuan.github.io/images/avatar.png</logo>
     <icon>https://maodinghuan.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Groot</rights>
+    <entry>
+        <title type="html"><![CDATA[SpringBoot解决跨域问题]]></title>
+        <id>https://maodinghuan.github.io/post/springboot-jie-jue-kua-yu-wen-ti/</id>
+        <link href="https://maodinghuan.github.io/post/springboot-jie-jue-kua-yu-wen-ti/">
+        </link>
+        <updated>2020-11-11T01:46:35.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>方案一：创建一个filter解决跨域</strong><br>
+@Component</p>
+<p>public class SimpleCORSFilter implements Filter {</p>
+<pre><code>public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+
+    HttpServletResponse response = (HttpServletResponse) res;
+
+    response.setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+
+    response.setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;POST, GET, OPTIONS, DELETE, HEAD&quot;);
+
+    response.setHeader(&quot;Access-Control-Max-Age&quot;, &quot;3600&quot;);
+
+    response.setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;access-control-allow-origin, authority, content-type, version-info, X-Requested-With&quot;);
+
+
+
+    chain.doFilter(req, res);
+
+}
+
+public void init(FilterConfig filterConfig) {}
+
+public void destroy() {}
+</code></pre>
+<p>}</p>
+<p><strong>方案二：基于WebMvcConfigurerAdapter配置加入Cors的跨域</strong><br>
+import org.springframework.context.annotation.Configuration;</p>
+<p>import org.springframework.web.servlet.config.annotation.CorsRegistry;</p>
+<p>import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;</p>
+<p>@Configuration</p>
+<p>public class CorsConfig extends WebMvcConfigurerAdapter {</p>
+<pre><code>@Override 
+
+public void addCorsMappings(CorsRegistry registry) { 
+
+    registry.addMapping(&quot;/**&quot;) 
+
+            .allowedOrigins(&quot;*&quot;) 
+
+            .allowCredentials(true) 
+
+            .allowedMethods(&quot;GET&quot;, &quot;POST&quot;, &quot;DELETE&quot;, &quot;PUT&quot;) 
+
+            .maxAge(3600); 
+
+} 
+</code></pre>
+<p>}</p>
+<p>如果你想做到更细致也可以使用@CrossOrigin这个注解在controller类中使用。</p>
+<p>这样就可以指定该controller中所有方法都能处理来自http:19.168.1.10:8080中的请求。<br>
+@CrossOrigin(origins = &quot;http://192.168.1.10:8080&quot;, maxAge = 3600)</p>
+<p>@RequestMapping(&quot;rest_index&quot;)</p>
+<p>@RestController</p>
+<p>public class IndexController{</p>
+<p>}</p>
+<p>第一种Filter的方案也支持springmvc。</p>
+<p>第二种常用于springboot。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SDK和API的区别]]></title>
         <id>https://maodinghuan.github.io/post/sdk-he-api-de-qu-bie/</id>
@@ -585,34 +651,6 @@ Spring依赖反射，反射影响性能
 依赖注入是时下最流行的IoC实现方式，依赖注入分为接口注入（Interface Injection），Setter方法注入（Setter Injection）和构造器注入（Constructor Injection）三种方式。其中接口注入由于在灵活性和易用性比较差，现在从Spring4开始已被废弃。</p>
 <p>构造器依赖注入：构造器依赖注入通过容器触发一个类的构造器来实现的，该类有一系列参数，每个参数代表一个对其他类的依赖。</p>
 <p>Setter方法注入：Setter方法注入是容器通过调用无参构造器或无参static工厂 方法实例化bean之后，调用该bean的setter方法，即实现了基于setter的依赖注入。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[云服务器安装mysql怎么远程连接]]></title>
-        <id>https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-mysql-zen-me-yuan-cheng-lian-jie/</id>
-        <link href="https://maodinghuan.github.io/post/yun-fu-wu-qi-an-zhuang-mysql-zen-me-yuan-cheng-lian-jie/">
-        </link>
-        <updated>2020-04-08T08:37:54.000Z</updated>
-        <content type="html"><![CDATA[<p>我搞了这东西很久 ，所以我不希望你们像我一样踩坑.........................<br>
-第一步：<br>
-首先要确保你的云服务器开启了3306端口，这个是要去登入云服务器控制台开启的，设置安全组<br>
-第二步：<br>
-1.使用yum下载mysql以及需要的相关插件<br>
-yum -y install make gcc-c++ mysql mysql-devel mysql-server<br>
-2.启动MySQL<br>
-service mysqld start<br>
-3.登录mysql<br>
-mysql -uroot -p<br>
-4.远程登入授权<br>
-use mysql;<br>
-update user set host = '%' where user = 'root';<br>
-flush privileges;</p>
-<pre><code>如果不放心是否修改成功，那就执行
-select user,host from user;
-查看是否修改成功
-</code></pre>
-<figure data-type="image" tabindex="1"><img src="https://maodinghuan.github.io/post-images/1600389264374.png" alt="" loading="lazy"></figure>
-<p>ps:设置mysql登入密码：mysqladmin -u root -p password &quot;root&quot;</p>
 ]]></content>
     </entry>
 </feed>
